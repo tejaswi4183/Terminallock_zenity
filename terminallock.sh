@@ -29,11 +29,10 @@ else
 echo "Check your Internet connection"
 fi
 fi
-if [[ $password == "ramya" ]]
+if [[ $password == "teju" ]]
 then
-figlet "welcome"
-echo
-figlet "            ramya"
+figlet "welcome teju"
+
 else
 figlet "who are you"
 sleep 3
