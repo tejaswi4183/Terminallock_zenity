@@ -3,7 +3,7 @@
 echo
 password="$(zenity --password --title="Login")"
 
-if [[ $password == "teju" ]]
+if [[ `md5sum <<< $password` == "teju" ]]
 then
 figlet "welcome"
 
