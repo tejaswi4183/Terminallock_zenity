@@ -1,4 +1,5 @@
 #!/bin/bash
+#Checking Zenity is installed or not 
 which zenity > /dev/null
 if [ $? == 0 ]
 then
@@ -13,6 +14,7 @@ else
 echo "Check your Internet Connection"
 fi
 fi
+#Checking Figlet tool is present or not
 which figlet > /dev/null
 if [ $? == 0 ]
 then 
@@ -25,6 +27,21 @@ sudo apt-get update -y
 sudo apt-get install figlet
 else
 echo "Check your Internet connection"
+fi
+fi
+#Check md5sum is present or not
+which zenity > /dev/null
+if [ $? == 0 ]
+then
+echo "md5sum is present"
+else
+ping -c 3 google.com
+if [ $? == 0 ]
+then 
+sudo apt-get update -y
+sudo apt-get install ucommon-utils
+else
+echo "Check your Internet Connection"
 fi
 fi
 password=$(zenity --password --title="Set password")
