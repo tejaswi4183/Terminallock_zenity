@@ -27,10 +27,10 @@ else
 echo "Check your Internet connection"
 fi
 fi
-read -s -p "Enter Terminal password:" password
+password=$(zenity --password --title="Set password")
 
 echo
-sed "s/teju/`md5sum <<< $password`/g" terminallock.sh >> TerminalLock
+sed "s/teju/`md5sum <<< $password`/g" terminallock.sh > TerminalLock
 sudo rm terminallock.sh
 sudo chmod +x TerminalLock
 sudo mv TerminalLock /usr/bin/

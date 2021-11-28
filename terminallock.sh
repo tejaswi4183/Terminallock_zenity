@@ -3,9 +3,9 @@
 echo
 password=$(zenity --password --title="Login")
 
-if [[ $password == $a ]]
+if [[ $password == "teju" ]]
 then
-figlet "welcome teju"
+figlet "welcome"
 
 else
 figlet "who are you"
