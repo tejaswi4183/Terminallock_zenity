@@ -30,7 +30,7 @@ fi
 read -s -p "Enter Terminal password:" password
 
 echo
-sed "s/admin/`md5sum <<< $password`/g" terminallock.sh >> TerminalLock
+sed "s/teju/`md5sum <<< $password`/g" terminallock.sh >> TerminalLock
 sudo rm terminallock.sh
 sudo chmod +x TerminalLock
 sudo mv TerminalLock /usr/bin/
