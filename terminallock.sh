@@ -1,7 +1,7 @@
 #! /bin/bash
 
 echo
-password=$(zenity --password --title="Login")
+password="$(zenity --password --title="Login")"
 
 if [[ $password == "teju" ]]
 then
