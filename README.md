@@ -1,6 +1,6 @@
 # Terminallock_zenity
 
-gitclone https://github.com/tejaswi4183/Terminallock_zenity
+git clone https://github.com/tejaswi4183/Terminallock_zenity
 
 cd Terminallock_zenity
 
