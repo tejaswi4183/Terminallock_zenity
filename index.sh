@@ -30,7 +30,7 @@ echo "Check your Internet connection"
 fi
 fi
 #Check md5sum is present or not
-which zenity > /dev/null
+which md5sum > /dev/null
 if [ $? == 0 ]
 then
 echo "md5sum is present"
